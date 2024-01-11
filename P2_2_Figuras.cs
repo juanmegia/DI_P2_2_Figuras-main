@@ -61,6 +61,14 @@ public class P2_2_Figuras
         {
             figura._color = Color.FromArgb(200, 245, 40, 145);
         }
+         double total = 0;
+        foreach (Figura figura in figuras)
+        {
+            total += figura.GetArea();
+        }
+        Console.WriteLine($"Suma de todas las areas: {total:0.00}");
+    
+
 
 
   }
