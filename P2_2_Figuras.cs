@@ -10,6 +10,31 @@ public class P2_2_Figuras
 {
   static void Main(string[] args)
   {
+        
+        Circulo circulo = new Circulo(2, Color.FromArgb(213, 50, 17, 200));
+        Console.WriteLine(circulo);
+         Console.WriteLine($"-Area: {circulo.GetArea():0.00}");;
+
+        Rectangulo rectangulo = new Rectangulo(7, 10, Color.FromArgb(231, 82, 65, 147));
+        Console.WriteLine(rectangulo);
+         Console.WriteLine($"-Area: {rectangulo.GetArea():0.00}");;
+
+        Triangulo triangulo = new Triangulo(9, Color.FromArgb(210, 232, 10, 10));
+        Console.WriteLine(triangulo);
+         Console.WriteLine($"-Area: {triangulo.GetArea():0.00}");;
+
+        Console.WriteLine("Modificando un valor de cada figura...");
+        circulo.Radio = 6;
+        rectangulo.Ancho = 20;
+        triangulo.Lado = 8;
+
+        Console.WriteLine(circulo);
+        
+        Console.WriteLine(rectangulo);
+       
+        Console.WriteLine(triangulo);
+        
+
 
   }
 
