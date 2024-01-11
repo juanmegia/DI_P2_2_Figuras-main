@@ -33,7 +33,29 @@ public class P2_2_Figuras
         Console.WriteLine(rectangulo);
        
         Console.WriteLine(triangulo);
+         Circulo circulo2 = new Circulo(3, Color.FromArgb(255, 50, 17, 200));
+        Rectangulo rectangulo2 = new Rectangulo(5, 8, Color.FromArgb(255, 89, 65, 147));
+        Triangulo triangulo2 = new Triangulo(4, Color.FromArgb(255, 255, 10, 10));
+
         
+        Console.WriteLine("Creando lista de figuras...");
+        List<Figura> figuras = new List<Figura>
+        {
+            circulo,
+            circulo2,
+            rectangulo,
+            rectangulo2,
+            triangulo,
+            triangulo2
+        };
+
+        
+        foreach (Figura figura in figuras)
+        {
+            Console.WriteLine(figura);
+            Console.WriteLine($"-Area: {figura.GetArea():0.00}");;
+            
+        }
 
 
   }
