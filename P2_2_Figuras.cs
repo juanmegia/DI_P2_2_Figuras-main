@@ -56,6 +56,11 @@ public class P2_2_Figuras
             Console.WriteLine($"-Area: {figura.GetArea():0.00}");;
             
         }
+       
+        foreach (Figura figura in figuras)
+        {
+            figura._color = Color.FromArgb(200, 245, 40, 145);
+        }
 
 
   }
